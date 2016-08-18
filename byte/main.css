@@ -241,18 +241,22 @@ footer .right {
 }
 
 .homeHireButton {
-	padding: 13pt 23pt 13pt 23pt;
+	padding: 16pt 26pt 16pt 26pt;
 	border-radius: 34pt;
 	height: auto;
 	background-color: transparent;
 	border: 2pt solid #39d9ff;
 	font-weight: 300;
-	font-size: 14pt;
-	color: #39d9ff;
+	font-size: 16pt;
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
 	-webkit-transition: color 0.2s ease, border 0.2s ease;
+}
+
+.homeHireButton a {
+	text-decoration: none;
+	color: #39d9ff;
 }
 
 .peach {
