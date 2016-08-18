@@ -32,11 +32,11 @@ body {
 }
 
 p {
-	max-width: 380pt;
+	max-width: 350pt;
 	margin-left: auto;
 	margin-right: auto;
 	font-family: "Greycliff", sans-serif;
-	font-size: 15pt;
+	font-size: 14pt;
 	line-height: 24pt;
 	color: #34373d;
 	font-weight: 300;
@@ -44,14 +44,14 @@ p {
 
 h2 {
 	font-family: "Greycliff", sans-serif;
-	font-size: 30pt;
+	font-size: 24pt;
 	color: #34373d;
 	font-weight: 300;
 }
 
 h3 {
 	font-family: "Greycliff", sans-serif;
-	font-size: 24pt;
+	font-size: 22pt;
 	color: #34373d;
 	font-weight: 500;
 	margin-bottom: -3pt;
@@ -149,17 +149,20 @@ footer .right {
 	background-position: right center;
 }
 
+.center {
+	text-align: center;
+}
 
 
 /* ––––  Home ––– */
 
 .homeLogoHeader {
 	width: 100%;
-	height: 300pt;
+	height: 240pt;
 	background-image: url(images/byteLogo.svg);
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-size: 240pt;
+	background-size: 220pt;
 }
 
 .homeFeatured {
@@ -173,19 +176,20 @@ footer .right {
 	text-align: center;
 	padding-right: 10pt;
 	padding-left: 10pt;
+	margin-bottom: 14pt;
 }
 
 .homeFeatured .featureBox {
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 80pt;
+	margin-top: 50pt;
 	margin-bottom: 40pt;
 	width: 90%;
-	max-width: 800pt;
+	max-width: 650pt;
 	height: 50%;
 	min-height: 250pt;
-	max-height: 390pt;
-	background-image: url(images/musicMaker.jpg);
+	max-height: 300pt;
+	background-image: url(images/static.gif);
 	background-size: cover;
 	background-position: center center;
 	border-radius: 20pt;
@@ -205,25 +209,24 @@ footer .right {
 	box-sizing: border-box;
 	position: relative;
 	top: 0;
-	padding: 10pt;
-	width: 33%;
+	padding: 20pt;
 	min-width: 300pt;
 	max-width: 320pt;
 	display: inline-block;
-
 }
 
 .appBlock .appBox {
 	margin-top: 20pt;
+	margin-bottom: 30pt;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 30pt;
-	width: 280pt;
+	width: 260pt;
 	background-color: transparent;
-	height: 280pt;
+	height: 260pt;
 	border-radius: 20pt;
 	overflow: hidden;
 	box-shadow: 0px 0px 5px #fff;
+	background-repeat: no-repeat;
 	-webkit-transition: transform 0.4s cubic-bezier(.06,.7,.43,.98), box-shadow 0.4s cubic-bezier(.06,.7,.43,.98);
 }
 
@@ -232,18 +235,30 @@ footer .right {
 	height: auto;
 }
 
+.appBlock p {
+	min-height: 100pt;
+	display: inline-block;
+}
+
 .homeHireButton {
-	width: 380pt;
-	height: 60pt;
+	padding: 13pt 23pt 13pt 23pt;
 	border-radius: 34pt;
+	height: auto;
 	background-color: transparent;
 	border: 2pt solid #39d9ff;
 	font-weight: 300;
+	font-size: 14pt;
 	color: #39d9ff;
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
 	-webkit-transition: color 0.2s ease, border 0.2s ease;
+}
+
+.peach {
+	background-image: url(images/peach.jpg);
+	background-position: center center;
+	background-size: cover;
 }
 
 .peach:hover {
@@ -256,9 +271,21 @@ footer .right {
 	box-shadow: 0px 10px 30px rgba(238, 237, 239, 0.3);
 }
 
+.byte {
+	background-image: url(images/byte.jpg);
+	background-position: center center;
+	background-size: cover;
+}
+
 .byte:hover {
 	transform: scale(1.03, 1.03);
 	box-shadow: 0px 10px 30px rgba(57, 217, 255, 0.2);
+}
+
+.musicMaker {
+	background-image: url(images/musicMaker.jpg);
+	background-position: center center;
+	background-size: cover;
 }
 
 .musicMaker:hover {
@@ -274,8 +301,121 @@ footer .right {
 }
 
 
-/* ––––  Keyframes ––– */
+/* ––––  Jobs ––– */
 
+
+.homeFeatured .jobBox {
+	margin-left: auto;
+	margin-right: auto;
+	box-sizing: border-box;
+	padding: 35pt;
+	padding-top: 16pt;
+	margin-top: 50pt;
+	text-align: left;
+	margin-bottom: 50pt;
+	width: 90%;
+	max-width: 600pt;
+	min-height: 250pt;
+	background-size: cover;
+	border: 2pt solid #ededed;
+	background-position: center center;
+	border-radius: 20pt;
+	-webkit-transition: transform 0.4s cubic-bezier(.06,.7,.43,.98), box-shadow 0.4s ease;
+}
+
+.jobBox h2 {
+	font-weight: 500;
+	font-size: 22pt;
+	margin-bottom: 2pt;
+}
+
+.jobBox h3 {
+	font-weight: 300;
+	font-size: 18pt;
+	margin: 0;
+	padding-top: 5pt;
+	margin-bottom: 10pt;
+}
+
+.jobBox p {
+	max-width: none;
+	margin-top: 25pt;
+	margin-bottom: 25pt;
+}
+
+.jobBox ul {
+	font-size: 14pt;
+	margin-left: 0;
+	list-style-position: outside;
+	line-height: 24pt;
+}
+
+.jobBox ul li {
+	margin-left: -13pt;
+}
+
+.jobBox button {
+	font-weight: 300;
+}
+
+/* ––––  Responsive  –––– */
+
+@media (max-width: 550px) {
+ h2 {
+    font-size: 20pt;
+  	}
+
+ .homeApps {
+ 	width: 100%;
+ 	max-width: 550px;
+ 	min-width: 0;
+  	padding: 0;
+  	overflow: hidden;
+  }
+
+.homeApps .appBlock {
+	padding: 10pt
+	max-width: 550px;
+	min-width: none;
+	}
+
+.appBlock .appBox {
+	width: 100%;
+	max-height: 200pt;
+	}
+}
+
+@media (max-width: 900px) {
+ h2 {
+    font-size: 20pt;
+  }
+
+ .homeApps .appBlock {
+	display: block;
+	width: 100%;
+
+	margin-right: auto;
+	margin-left: auto;
+	}
+
+ .appBlock .appBox {
+ 	width: 100%;
+ }
+}
+
+@media (max-width: 1350px) {
+ h2 {
+    font-size: 25pt;
+  }
+
+ .homeApps .appBlock {
+	max-width: 40%;
+	}
+
+ .appBlock .appBox {
+ 	width: 100%;
+ }
+}
 
 
 
