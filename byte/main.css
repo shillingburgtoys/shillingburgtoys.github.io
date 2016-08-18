@@ -1,0 +1,285 @@
+/* ––––  Font Designation ––– */
+
+@font-face {
+	font-family: "Greycliff";
+	font-weight: 300;
+	src: url(fonts/greycliff_reg.ttf);
+}
+
+@font-face {
+	font-family: "Greycliff";
+	font-weight: 500;
+	src: url(fonts/greycliff_bold.ttf);
+}
+
+@font-face {
+	font-family: "Greycliff";
+	font-weight: 700;
+	src: url(fonts/greycliff_heavy.ttf);
+}
+
+
+
+/* ––––  Global Styles ––– */
+
+body {
+	margin: 0;
+	background-color: #fff;
+	font-family: "Greycliff", sans-serif;
+	font-size: 18pt;
+	color: #34373d;
+	font-weight: 300;
+}
+
+p {
+	max-width: 380pt;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "Greycliff", sans-serif;
+	font-size: 15pt;
+	line-height: 24pt;
+	color: #34373d;
+	font-weight: 300;
+}
+
+h2 {
+	font-family: "Greycliff", sans-serif;
+	font-size: 30pt;
+	color: #34373d;
+	font-weight: 300;
+}
+
+h3 {
+	font-family: "Greycliff", sans-serif;
+	font-size: 24pt;
+	color: #34373d;
+	font-weight: 500;
+	margin-bottom: -3pt;
+}
+
+button {
+	border: none;
+	background-color: #39d9ff;
+	color: #fff;
+	min-width: 100pt;
+	font-family: "Greycliff", sans-serif;
+	font-weight: 500;
+	font-size: 16pt;
+	padding-left: 30pt;
+	padding-right: 30pt;
+	height: 44pt;
+	border-radius: 25pt;
+	margin: 5pt;
+	cursor: pointer;
+	-webkit-transition: transform 0.4s cubic-bezier(.06,.7,.43,.98);
+}
+
+button:focus {
+	outline: none;
+}
+
+button:hover {
+	transform: scale(1.05, 1.05);
+}
+
+.disabled {
+	background-color: #9fa7ad;
+	font-weight: 300;
+}
+
+.disabled:hover {
+	transform: none;
+	cursor: default;
+}
+
+footer {
+	box-sizing: border-box;
+	width: 100%;
+	background-color: #e4edef;
+	margin-top: 80pt;
+	min-height: 88pt;
+	padding-top: 20pt;
+	font-family: "Greycliff", sans-serif;
+	font-size: 16pt;
+	font-weight: 500;
+	background-image: url(images/byteEmblem.svg);
+	background-size: auto 40%;
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+footer a {
+	text-decoration: none;
+	color: #1c1c1c;
+	padding-right: 20pt;
+}
+
+footer a:hover {
+	text-decoration: none;
+	color: #39d9ff;
+}
+
+footer .left {
+	width: 100%;
+	display: block;
+	text-align: left;
+	box-sizing: border-box;
+	margin-top: -22pt;
+	padding: 34pt;
+	font-size: 16pt;
+}
+
+footer .right {
+	width: 100%;
+	max-width: 300pt;
+	margin-right: auto;
+	text-align: right;
+	display: block;
+	float: right;
+	box-sizing: border-box;
+	margin-top: -30pt;
+	padding: 34pt;
+	padding-right: 60pt;
+	font-size: 14pt;
+	color: #808689;
+	font-weight: 300;
+	background-color: transparent;
+	background-image: url(images/byteEmblem.svg);
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+
+
+/* ––––  Home ––– */
+
+.homeLogoHeader {
+	width: 100%;
+	height: 300pt;
+	background-image: url(images/byteLogo.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 240pt;
+}
+
+.homeFeatured {
+	box-sizing: border-box;
+	width: 100%;
+	margin-top: -80pt;
+	background-color: #fff;
+	font-family: "Greycliff", sans-serif;
+	font-size: 30pt;
+	color: #1c1c1c;
+	text-align: center;
+	padding-right: 10pt;
+	padding-left: 10pt;
+}
+
+.homeFeatured .featureBox {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 80pt;
+	margin-bottom: 40pt;
+	width: 90%;
+	max-width: 800pt;
+	height: 50%;
+	min-height: 250pt;
+	max-height: 390pt;
+	background-image: url(images/musicMaker.jpg);
+	background-size: cover;
+	background-position: center center;
+	border-radius: 20pt;
+	-webkit-transition: transform 0.4s cubic-bezier(.06,.7,.43,.98), box-shadow 0.4s ease;
+}
+
+.homeApps {
+	box-sizing: border-box;
+	text-align: center;
+	width: 100%;
+	background-color: #fff;
+	padding: 20pt;
+	margin-bottom: 70pt;
+}
+
+.homeApps .appBlock {
+	box-sizing: border-box;
+	position: relative;
+	top: 0;
+	padding: 10pt;
+	width: 33%;
+	min-width: 300pt;
+	max-width: 320pt;
+	display: inline-block;
+
+}
+
+.appBlock .appBox {
+	margin-top: 20pt;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30pt;
+	width: 280pt;
+	background-color: transparent;
+	height: 280pt;
+	border-radius: 20pt;
+	overflow: hidden;
+	box-shadow: 0px 0px 5px #fff;
+	-webkit-transition: transform 0.4s cubic-bezier(.06,.7,.43,.98), box-shadow 0.4s cubic-bezier(.06,.7,.43,.98);
+}
+
+.appBlock .appBox img {
+	width: 100%;
+	height: auto;
+}
+
+.homeHireButton {
+	width: 380pt;
+	height: 60pt;
+	border-radius: 34pt;
+	background-color: transparent;
+	border: 2pt solid #39d9ff;
+	font-weight: 300;
+	color: #39d9ff;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	-webkit-transition: color 0.2s ease, border 0.2s ease;
+}
+
+.peach:hover {
+	transform: scale(1.03, 1.03);
+	box-shadow: 0px 10px 30px rgba(255, 230, 235, 0.5);
+}
+
+.portal:hover {
+	transform: scale(1.03, 1.03);
+	box-shadow: 0px 10px 30px rgba(238, 237, 239, 0.3);
+}
+
+.byte:hover {
+	transform: scale(1.03, 1.03);
+	box-shadow: 0px 10px 30px rgba(57, 217, 255, 0.2);
+}
+
+.musicMaker:hover {
+	transform: scale(1.03, 1.03);
+	box-shadow: 0px 10px 30px rgba(255, 237, 104, 0.5);
+}
+
+.homeHireButton:hover {
+	transform: none;
+	border: 2pt #fbd700 solid;
+	color: #fbd700;
+	-webkit-transition: color 0.2s ease, border 0.2s ease;
+}
+
+
+/* ––––  Keyframes ––– */
+
+
+
+
+
+
+
+
