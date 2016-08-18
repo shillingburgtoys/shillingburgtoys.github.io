@@ -12,12 +12,6 @@
 	src: url(fonts/greycliff_bold.ttf);
 }
 
-@font-face {
-	font-family: "Greycliff";
-	font-weight: 700;
-	src: url(fonts/greycliff_heavy.ttf);
-}
-
 
 
 /* ––––  Global Styles ––– */
@@ -63,7 +57,7 @@ button {
 	color: #fff;
 	min-width: 100pt;
 	font-family: "Greycliff", sans-serif;
-	font-weight: 500;
+	font-weight: 300;
 	font-size: 16pt;
 	padding-left: 30pt;
 	padding-right: 30pt;
@@ -163,6 +157,7 @@ footer .right {
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: 220pt;
+	cursor: pointer;
 }
 
 .homeFeatured {
@@ -245,7 +240,7 @@ footer .right {
 	border-radius: 34pt;
 	height: auto;
 	background-color: transparent;
-	border: 2pt solid #39d9ff;
+	border: 2pt solid #ededed;
 	font-weight: 300;
 	font-size: 16pt;
 	margin-left: auto;
@@ -257,6 +252,13 @@ footer .right {
 .homeHireButton a {
 	text-decoration: none;
 	color: #39d9ff;
+}
+
+.homeHireButton:hover {
+	transform: none;
+	border: 2pt #39d9ff solid;
+	color: #fff;
+	-webkit-transition: color 0.2s ease, border 0.2s ease;
 }
 
 .peach {
@@ -295,13 +297,6 @@ footer .right {
 .musicMaker:hover {
 	transform: scale(1.03, 1.03);
 	box-shadow: 0px 10px 30px rgba(255, 237, 104, 0.5);
-}
-
-.homeHireButton:hover {
-	transform: none;
-	border: 2pt #fbd700 solid;
-	color: #fbd700;
-	-webkit-transition: color 0.2s ease, border 0.2s ease;
 }
 
 
