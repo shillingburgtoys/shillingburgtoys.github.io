@@ -77,8 +77,10 @@ button:hover {
 }
 
 .disabled {
-	background-color: #9fa7ad;
+	background-color: #fff;
+	border: 2pt solid #ededed;
 	font-weight: 300;
+	color: #34373d;
 }
 
 .disabled:hover {
@@ -89,7 +91,7 @@ button:hover {
 footer {
 	box-sizing: border-box;
 	width: 100%;
-	background-color: #e4edef;
+	background-color: #ededed;
 	margin-top: 80pt;
 	min-height: 88pt;
 	padding-top: 20pt;
@@ -356,6 +358,77 @@ footer .right {
 .jobBox button {
 	font-weight: 300;
 }
+
+/* ––––  About  –––– */
+
+
+.homeFeatured .aboutBox {
+	margin-left: auto;
+	margin-right: auto;
+	box-sizing: border-box;
+	padding: 35pt;
+	padding-top: 16pt;
+	padding-bottom: 16pt;
+	margin-top: 50pt;
+	text-align: left;
+	margin-bottom: 50pt;
+	width: 90%;
+	border: 2pt solid #ededed;
+	border-radius: 20pt;
+	max-width: 600pt;
+}
+
+.aboutBox p {
+	max-width: 600pt;
+	font-size: 16pt;
+	line-height: 27pt;
+	padding-bottom: 0;
+}
+
+.aboutTeam {
+	background-color: #fff;
+	width: 100%;
+	max-width: 800pt;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30pt;
+	border-radius: 20pt;
+	box-sizing: border-box;
+}
+
+.aboutTeam .bio {
+	width: 138pt;
+	padding-top: 30pt;
+	display: inline-block;
+}
+
+.bio h2 {
+	font-size: 15pt;
+	font-weight: 300;
+	margin:0;
+	margin-top: 13pt;
+}
+
+.bio h3 {
+	font-size: 13pt;
+	font-weight: 500;
+	margin-top: 2pt;
+}
+
+.bio img {
+	background-color: #ededed;
+	padding: 10pt;
+	border-radius: 64px;
+	width: 64px;
+	height: 64px;
+	-webkit-transition: transform 0.4s cubic-bezier(.06,.7,.43,.98);
+}
+
+.bio img:hover {
+	transform: scale(1.05, 1.05);
+	-webkit-transition: transform 0.4s cubic-bezier(.06,.7,.43,.98);
+}
+
 
 /* ––––  Responsive  –––– */
 
