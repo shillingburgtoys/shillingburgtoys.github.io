@@ -269,7 +269,7 @@ footer .right {
 	font-size: 16pt;
 	margin-left: auto;
 	margin-right: auto;
-	display: block;
+	display: none;
 	transition: color 0.2s ease, border 0.2s ease;
 	-webkit-transition: color 0.2s ease, border 0.2s ease;
 	-moz-transition: color 0.2s ease, border 0.2s ease;
