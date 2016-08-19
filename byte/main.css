@@ -160,6 +160,12 @@ footer .right {
 	background-position: center center;
 	background-size: 220pt;
 	cursor: pointer;
+	-webkit-transition: transform 1s ease;
+}
+
+.homeLogoHeader:hover {
+	-webkit-transition: transform 1s ease;
+	-webkit-animation: float 2s infinite cubic-bezier(.28,0,.58,1);
 }
 
 .homeFeatured {
@@ -367,13 +373,13 @@ footer .right {
 	margin-right: auto;
 	box-sizing: border-box;
 	padding: 35pt;
+	border: 2pt solid #ededed;
 	padding-top: 16pt;
 	padding-bottom: 16pt;
 	margin-top: 50pt;
 	text-align: left;
 	margin-bottom: 50pt;
 	width: 90%;
-	border: 2pt solid #ededed;
 	border-radius: 20pt;
 	max-width: 600pt;
 }
@@ -385,13 +391,22 @@ footer .right {
 	padding-bottom: 0;
 }
 
+.contactButton {
+	margin-top: -2pt;
+	background-color: transparent;
+	color: #39d9ff;
+	border: 2pt solid #39d9ff;
+	padding-top: 0pt;
+	padding-bottom: 2pt;
+}
+
 .aboutTeam {
 	background-color: #fff;
 	width: 100%;
 	max-width: 800pt;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 30pt;
+	margin-top: 8pt;
 	border-radius: 20pt;
 	box-sizing: border-box;
 }
@@ -410,23 +425,54 @@ footer .right {
 }
 
 .bio h3 {
-	font-size: 13pt;
+	font-size: 12pt;
 	font-weight: 500;
 	margin-top: 2pt;
 }
 
-.bio img {
-	background-color: #ededed;
-	padding: 10pt;
-	border-radius: 64px;
+.bioImage {
+	background-color: #39d9ff;
+	margin-left: auto;
+	margin-right: auto;
 	width: 64px;
 	height: 64px;
-	-webkit-transition: transform 0.4s cubic-bezier(.06,.7,.43,.98);
+	margin-top: 0;
+	border-radius: 45px;
+	overflow: hidden;
+	padding: 10pt;
+	-webkit-transition: transform 0.4s cubic-bezier(.06,.7,.43,.98), background-color 0.2s ease;
+}
+
+.bio img {
+	width: 64px;
+	height: 64px;
 }
 
 .bio img:hover {
+	-webkit-animation: float2 2s infinite cubic-bezier(.28,0,.58,1);
+}
+
+.bioImage:hover {
 	transform: scale(1.05, 1.05);
-	-webkit-transition: transform 0.4s cubic-bezier(.06,.7,.43,.98);
+	background-color: #fbd700;
+	-webkit-transition: transform 0.4s cubic-bezier(.06,.7,.43,.98), background-color 0.1s ease;
+}
+
+
+.contactBox {
+	width: 200pt;
+	text-align: center;
+	display: inline-block;
+}
+
+.contactBox h4 {
+	font-size: 16pt;
+	font-weight: 300;
+}
+
+.contactBox img {
+	transform: translate(-2pt, 3pt);
+	margin-right: -4pt;
 }
 
 
@@ -489,7 +535,19 @@ footer .right {
  }
 }
 
+/* ––––– Keyframes ––––– */
 
+@-webkit-keyframes float {
+	0% {transform: translate(0, 0px);}
+	50% {transform: translate(0, 7px);}
+	100% {transform: translate(0, 0px);}
+}
+
+@-webkit-keyframes float2 {
+	0% {transform: translate(0, -1px);}
+	50% {transform: translate(0, 4px);}
+	100% {transform: translate(0, -1px);}
+}
 
 
 
