@@ -135,23 +135,15 @@ footer .left {
 }
 
 footer .right {
-	width: 100%;
-	max-width: 300pt;
-	margin-right: auto;
-	text-align: right;
-	display: block;
+	width: 100pt;
+	height:  54pt;
+	position: relative;
+	right: -20pt;
+	top: -20pt;
 	float: right;
-	box-sizing: border-box;
-	margin-top: -30pt;
-	padding: 34pt;
-	padding-right: 60pt;
-	font-size: 14pt;
-	color: #808689;
-	font-weight: 300;
 	background-color: transparent;
-	background-image: url(images/byteEmblem.svg);
-	background-repeat: no-repeat;
-	background-position: right center;
+	white-space: nowrap;
+	cursor: pointer;
 }
 
 .center {
@@ -210,7 +202,7 @@ footer .right {
 	height: 50%;
 	min-height: 250pt;
 	max-height: 300pt;
-	background-image: url(images/static.gif);
+	background-image: url(images/tv.gif);
 	background-size: cover;
 	background-position: center center;
 	border-radius: 20pt;
@@ -417,21 +409,33 @@ footer .right {
 	margin-left: auto;
 	margin-right: auto;
 	box-sizing: border-box;
+	background-image: url(images/office.jpg);
+	background-size: cover;
+	background-position: center center;
+	min-height: 80pt;
 	padding: 35pt;
-	border: 2pt solid #ededed;
-	padding-top: 16pt;
-	padding-bottom: 16pt;
-	margin-top: 50pt;
+	padding-top: 80pt;
+	padding-bottom: 80pt;
+	margin-top: 30pt;
 	text-align: left;
-	margin-bottom: 50pt;
+	margin-bottom: 80pt;
 	width: 90%;
 	border-radius: 20pt;
 	max-width: 600pt;
 }
 
+.aboutSubhead {
+	display: block;
+	max-width: 500pt;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .aboutBox p {
-	max-width: 600pt;
-	font-size: 16pt;
+	text-align: center;
+	max-width: 400pt;
+	font-size: 20pt;
+	font-weight: 500;
 	line-height: 27pt;
 	padding-bottom: 0;
 }
@@ -522,7 +526,7 @@ footer .right {
 }
 
 .contactBox img {
-	transform: translate(-2pt, 3pt);
+	transform: translate(-3pt, 3pt);
 	margin-right: -4pt;
 }
 
