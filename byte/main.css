@@ -236,9 +236,9 @@ footer .right {
 	margin-bottom: 30pt;
 	margin-left: auto;
 	margin-right: auto;
-	width: 260pt;
+	width: 240pt;
 	background-color: transparent;
-	height: 260pt;
+	height: 240pt;
 	border-radius: 20pt;
 	overflow: hidden;
 	box-shadow: 0px 0px 5px #fff;
@@ -547,10 +547,13 @@ footer .right {
   }
 
 .homeApps .appBlock {
-	padding: 10pt
+	padding: 10pt;
 	max-width: 550px;
 	min-width: none;
 	}
+
+
+.right {display: none;}
 
 .appBlock .appBox {
 	width: 100%;
@@ -565,14 +568,14 @@ footer .right {
 
  .homeApps .appBlock {
 	display: block;
-	width: 100%;
+	width: 80%;
 
 	margin-right: auto;
 	margin-left: auto;
 	}
 
  .appBlock .appBox {
- 	width: 100%;
+ 	width: 80%;
  }
 }
 
