@@ -197,15 +197,15 @@ footer .right {
 	margin-right: auto;
 	margin-top: 50pt;
 	margin-bottom: 40pt;
-	width: 90%;
+	width: 300pt;
 	max-width: 650pt;
-	height: 50%;
+	height: 300pt;
 	min-height: 250pt;
 	max-height: 300pt;
 	background-image: url(images/tv.gif);
 	background-size: cover;
 	background-position: center center;
-	border-radius: 20pt;
+	border-radius: 400pt;
 	transition: transform 0.4s cubic-bezier(.06,.7,.43,.98), box-shadow 0.4s ease;
 	-webkit-transition: transform 0.4s cubic-bezier(.06,.7,.43,.98), box-shadow 0.4s ease;
 	-moz-transition: transform 0.4s cubic-bezier(.06,.7,.43,.98), box-shadow 0.4s ease;
