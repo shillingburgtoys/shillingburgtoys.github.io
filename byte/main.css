@@ -533,6 +533,38 @@ footer .right {
 
 /* ––––  Responsive  –––– */
 
+@media (max-width: 360pt) {
+body {
+	padding: 0;
+}
+
+ h2 {
+    font-size: 20pt;
+  	}
+
+ .homeApps {
+ 	width: 100%;
+ 	max-width: 360px;
+ 	min-width: 0;
+  	padding: 0;
+  	overflow: hidden;
+  }
+
+.homeApps .appBlock {
+	padding: 00pt;
+	max-width: 360px;
+	min-width: none;
+	}
+
+
+.right {display: none;}
+
+.appBlock .appBox {
+	width: 100%;
+	max-height: 200pt;
+	}
+}
+
 @media (max-width: 550px) {
  h2 {
     font-size: 20pt;
