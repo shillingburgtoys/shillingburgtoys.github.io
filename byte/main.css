@@ -211,6 +211,7 @@ footer .right {
 	background-size: 500pt auto;
 	background-position: center center;
 	border-radius: 400pt;
+	border: 0px #fff solid;
 	transition: transform 0.4s cubic-bezier(.06,.7,.43,.98), box-shadow 0.4s ease;
 	-webkit-transition: transform 0.4s cubic-bezier(.06,.7,.43,.98), box-shadow 0.4s ease;
 	-moz-transition: transform 0.4s cubic-bezier(.06,.7,.43,.98), box-shadow 0.4s ease;
