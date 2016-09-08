@@ -1,3 +1,6 @@
+/*  Hi! Welcome to our CSS!  */
+
+
 /* ––––  Font Designation ––– */
 
 @font-face {
@@ -297,6 +300,21 @@ footer .right {
 	background-size: cover;
 }
 
+.peach:hover {
+	transform: scale(1.03, 1.03);
+	-webkit-transform: scale(1.03, 1.03);
+	-ms-transform: scale(1.03, 1.03);
+	-moz-transform: scale(1.03, 1.03);
+	box-shadow: 0px 10px 30px rgba(255, 230, 235, 0.5);
+}
+
+.portal:hover {
+	transform: scale(1.03, 1.03);
+	-webkit-transform: scale(1.03, 1.03);
+	-ms-transform: scale(1.03, 1.03);
+	-moz-transform: scale(1.03, 1.03);
+	box-shadow: 0px 10px 30px rgba(238, 237, 239, 0.3);
+}
 
 .byte {
 	background-image: url(images/byte.jpg);
@@ -304,6 +322,13 @@ footer .right {
 	background-size: cover;
 }
 
+.byte:hover {
+	transform: scale(1.03, 1.03);
+	-webkit-transform: scale(1.03, 1.03);
+	-ms-transform: scale(1.03, 1.03);
+	-moz-transform: scale(1.03, 1.03);
+	box-shadow: 0px 10px 30px rgba(57, 217, 255, 0.2);
+}
 
 .musicMaker {
 	background-image: url(images/musicMaker.jpg);
@@ -311,6 +336,26 @@ footer .right {
 	background-size: cover;
 }
 
+.musicMaker:hover {
+	transform: scale(1.03, 1.03);
+	-webkit-transform: scale(1.03, 1.03);
+	-ms-transform: scale(1.03, 1.03);
+	-moz-transform: scale(1.03, 1.03);
+	box-shadow: 0px 10px 30px rgba(255, 237, 104, 0.5);
+}
+
+.jiggle {
+	animation: jiggle 0.5s forwards cubic-bezier(.06,.7,.43,.98);
+}
+
+@-webkit-keyframes jiggle {
+	0% {transform: scale (1.03, 1.03), rotate(1deg);}
+	25% {transform: rotate(-4deg);}
+	50% {transform: rotate(3deg);}
+	75% {transform: rotate(-2deg);}
+	90% {transform: rotate(1deg), scale (1.02, 1.02);}
+	100% {transform: rotate(0deg), scale (1.03, 1.03);}
+}
 
 /* ––––  Jobs ––– */
 
@@ -471,7 +516,7 @@ footer .right {
 }
 
 .bio img:hover {
-	-webkit-animation: float2 1.6s infinite cubic-bezier(.28,0,.58,1);
+	-webkit-animation: float2 2s infinite cubic-bezier(.28,0,.58,1);
 }
 
 .bioImage:hover {
@@ -647,5 +692,5 @@ body {
 
 
 
-
+/* Thanks for stopping by! */
 

@@ -1,6 +1,4 @@
-<html>
-<head>
-	
+  
 <!---
 
                                             
@@ -16,6 +14,10 @@
                d8'    
 
 -->
+
+
+<html>
+<head>
 
 
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
@@ -34,25 +36,25 @@
     <h2>We build software made of positive particles.</h2>
     <div class="featureBox portal"></div>
     <h3>Portal</h3>
-    <p>Incoming soon.<br></p>
-    <button class="disabled">iOS &amp; Android</button>
+    <p>Newness in the works for iOS and Android.<br></p>
+    <button class="disabled">Coming soon</button>
   </div>
   <div class="homeApps">
     <h2>Our Other Apps</h2>
     <div class="appBlock">
-      <div class="appBox musicMaker"></div>
+      <div id="musicMaker" class="appBox musicMaker" onclick="jiggle('musicMaker');"></div>
       <h3>Music Maker</h3>
-      <p>In a world where palm trees rattle and golden keys whistle, one app lets you make music with ~emojis~ as your instruments. Coming soon.</p>
-      <button class="disabled">for iOS</button>
+      <p>In a world where palm trees rattle and golden keys whistle, one iOS app lets you make music with ~emojis~ as instruments.</p>
+      <button class="disabled">Coming soon</button>
     </div>
     <div class="appBlock">
-      <div class="appBox peach"></div>
+      <div id="peach" class="appBox peach" onclick="jiggle('peach');"></div>
       <h3>Peach</h3>
       <p>“The vinyl of social networks,” said a person one time. Peach is an intimate social journal that lets you share what you feel, think, see, hear, and do—vividly.</p>
       <a href="https://itunes.apple.com/us/app/peach-share-vividly/id1067891186?mt=8"><button>iOS</button></a><a href="https://play.google.com/store/apps/details?id=cool.peach&hl=en"><button>Android</button></a>
     </div>
     <div class="appBlock">
-      <div class="appBox byte"></div>
+      <div id="byte" class="appBox byte" onclick="jiggle('byte');"></div>
       <h3>Byte</h3>
       <p>Make awesomely rich collages out of photos, videos, drawings, GIFs, and more, then show off your creations. The world of Byte is weird, fun, and full of surprises.</p>
       <a href="https://itunes.apple.com/us/app/byte-create-awesome/id1021378991?mt=8"><button>iOS</button></a>
@@ -68,6 +70,17 @@
   </footer>
 
 </body>
-
 </html>
+
+<script> 
+    
+  function jiggle (element) {
+      document.getElementById(element).className += " jiggle";
+      setTimeout(function () {
+        document.getElementById(element).className = "appBox " + element;
+      }, 700);
+  }
+
+</script>
+
 
