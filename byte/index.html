@@ -36,7 +36,7 @@
   <div class="homeLogoHeader" onclick="location.href = 'index.html';"></div>
   <div class="homeFeatured">
     <h2>We build software made of positive particles.</h2>
-    <div class="featureBox portal"></div>
+    <div id="portal" class="featureBox portal" onclick="portalanim('portal');"></div>
     <h3>Portal</h3>
     <p>Newness in the works for iOS and Android.<br></p>
     <button class="disabled">Coming soon</button>
@@ -81,6 +81,13 @@
       setTimeout(function () {
         document.getElementById(element).className = "appBox " + element;
       }, 700);
+  }
+
+  function portalanim (element) {
+      document.getElementById(element).className += " portalanim";
+      setTimeout(function () {
+        document.getElementById(element).className = "featureBox " + element;
+      }, 2000);
   }
 
 </script>

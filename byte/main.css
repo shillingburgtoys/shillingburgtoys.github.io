@@ -196,6 +196,7 @@ footer .right {
 }
 
 .homeFeatured .featureBox {
+	box-sizing: border-box;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 50pt;
@@ -206,7 +207,7 @@ footer .right {
 	min-height: 250pt;
 	max-height: 300pt;
 	background-image: url(images/tv.gif);
-	background-size: cover;
+	background-size: 500pt auto;
 	background-position: center center;
 	border-radius: 400pt;
 	transition: transform 0.4s cubic-bezier(.06,.7,.43,.98), box-shadow 0.4s ease;
@@ -348,6 +349,10 @@ footer .right {
 	animation: jiggle 0.5s forwards cubic-bezier(.06,.7,.43,.98);
 }
 
+.portalanim {
+	animation: portal 2s forwards cubic-bezier(.06,.7,.43,.98);
+}
+
 @-webkit-keyframes jiggle {
 	0% {transform: scale (1.03, 1.03), rotate(1deg);}
 	25% {transform: rotate(-4deg);}
@@ -355,6 +360,13 @@ footer .right {
 	75% {transform: rotate(-2deg);}
 	90% {transform: rotate(1deg), scale (1.02, 1.02);}
 	100% {transform: rotate(0deg), scale (1.03, 1.03);}
+}
+
+@-webkit-keyframes portal {
+	0% {border: 0px #000 solid;}
+	20% {border: 200px #000 solid;}
+	90% {border: 200px #000 solid;}
+	100% {border: 0px #000 solid;}
 }
 
 /* ––––  Jobs ––– */
