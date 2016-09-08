@@ -347,26 +347,16 @@ footer .right {
 
 .jiggle {
 	animation: jiggle 0.5s forwards cubic-bezier(.06,.7,.43,.98);
+	-moz-animation: jiggle 0.5s forwards cubic-bezier(.06,.7,.43,.98);
+	-ms-animation: jiggle 0.5s forwards cubic-bezier(.06,.7,.43,.98);
+	-webkit-animation: jiggle 0.5s forwards cubic-bezier(.06,.7,.43,.98);
 }
 
 .portalanim {
 	animation: portal 2s forwards cubic-bezier(.06,.7,.43,.98);
-}
-
-@-webkit-keyframes jiggle {
-	0% {transform: scale (1.03, 1.03), rotate(1deg);}
-	25% {transform: rotate(-4deg);}
-	50% {transform: rotate(3deg);}
-	75% {transform: rotate(-2deg);}
-	90% {transform: rotate(1deg), scale (1.02, 1.02);}
-	100% {transform: rotate(0deg), scale (1.03, 1.03);}
-}
-
-@-webkit-keyframes portal {
-	0% {border: 0px #000 solid;}
-	20% {border: 200px #000 solid;}
-	90% {border: 200px #000 solid;}
-	100% {border: 0px #000 solid;}
+	-moz-animation: portal 2s forwards cubic-bezier(.06,.7,.43,.98);
+	-ms-animation: portal 2s forwards cubic-bezier(.06,.7,.43,.98);
+	-webkit-animation: portal 2s forwards cubic-bezier(.06,.7,.43,.98);
 }
 
 /* ––––  Jobs ––– */
@@ -700,6 +690,54 @@ body {
 	0% {transform: translate(0, -1px);}
 	50% {transform: translate(0, 4px);}
 	100% {transform: translate(0, -1px);}
+}
+
+@-webkit-keyframes jiggle {
+	0% {transform: scale (1.03, 1.03), rotate(1deg);}
+	25% {transform: rotate(-4deg);}
+	50% {transform: rotate(3deg);}
+	75% {transform: rotate(-2deg);}
+	90% {transform: rotate(1deg), scale (1.02, 1.02);}
+	100% {transform: rotate(0deg), scale (1.03, 1.03);}
+}
+
+@-webkit-keyframes portal {
+	0% {border: 0px #000 solid;}
+	20% {border: 200px #000 solid;}
+	90% {border: 200px #000 solid;}
+	100% {border: 0px #000 solid;}
+}
+
+@-moz-keyframes jiggle {
+	0% {transform: scale (1.03, 1.03), rotate(1deg);}
+	25% {transform: rotate(-4deg);}
+	50% {transform: rotate(3deg);}
+	75% {transform: rotate(-2deg);}
+	90% {transform: rotate(1deg), scale (1.02, 1.02);}
+	100% {transform: rotate(0deg), scale (1.03, 1.03);}
+}
+
+@-moz-keyframes portal {
+	0% {border: 0px #000 solid;}
+	20% {border: 200px #000 solid;}
+	90% {border: 200px #000 solid;}
+	100% {border: 0px #000 solid;}
+}
+
+@-ms-keyframes jiggle {
+	0% {transform: scale (1.03, 1.03), rotate(1deg);}
+	25% {transform: rotate(-4deg);}
+	50% {transform: rotate(3deg);}
+	75% {transform: rotate(-2deg);}
+	90% {transform: rotate(1deg), scale (1.02, 1.02);}
+	100% {transform: rotate(0deg), scale (1.03, 1.03);}
+}
+
+@-ms-keyframes portal {
+	0% {border: 0px #000 solid;}
+	20% {border: 200px #000 solid;}
+	90% {border: 200px #000 solid;}
+	100% {border: 0px #000 solid;}
 }
 
 
