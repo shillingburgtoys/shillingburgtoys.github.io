@@ -87,9 +87,9 @@ button:hover {
 
 .disabled {
 	background-color: #fff;
-	border: 2pt solid #ededed;
+	border: 2pt solid #d9dadb;
 	font-weight: 300;
-	color: #34373d;
+	color: #d9dadb;
 }
 
 .disabled:hover {
@@ -297,21 +297,6 @@ footer .right {
 	background-size: cover;
 }
 
-.peach:hover {
-	transform: scale(1.03, 1.03);
-	-webkit-transform: scale(1.03, 1.03);
-	-ms-transform: scale(1.03, 1.03);
-	-moz-transform: scale(1.03, 1.03);
-	box-shadow: 0px 10px 30px rgba(255, 230, 235, 0.5);
-}
-
-.portal:hover {
-	transform: scale(1.03, 1.03);
-	-webkit-transform: scale(1.03, 1.03);
-	-ms-transform: scale(1.03, 1.03);
-	-moz-transform: scale(1.03, 1.03);
-	box-shadow: 0px 10px 30px rgba(238, 237, 239, 0.3);
-}
 
 .byte {
 	background-image: url(images/byte.jpg);
@@ -319,26 +304,11 @@ footer .right {
 	background-size: cover;
 }
 
-.byte:hover {
-	transform: scale(1.03, 1.03);
-	-webkit-transform: scale(1.03, 1.03);
-	-ms-transform: scale(1.03, 1.03);
-	-moz-transform: scale(1.03, 1.03);
-	box-shadow: 0px 10px 30px rgba(57, 217, 255, 0.2);
-}
 
 .musicMaker {
 	background-image: url(images/musicMaker.jpg);
 	background-position: center center;
 	background-size: cover;
-}
-
-.musicMaker:hover {
-	transform: scale(1.03, 1.03);
-	-webkit-transform: scale(1.03, 1.03);
-	-ms-transform: scale(1.03, 1.03);
-	-moz-transform: scale(1.03, 1.03);
-	box-shadow: 0px 10px 30px rgba(255, 237, 104, 0.5);
 }
 
 
@@ -501,7 +471,7 @@ footer .right {
 }
 
 .bio img:hover {
-	-webkit-animation: float2 2s infinite cubic-bezier(.28,0,.58,1);
+	-webkit-animation: float2 1.6s infinite cubic-bezier(.28,0,.58,1);
 }
 
 .bioImage:hover {
