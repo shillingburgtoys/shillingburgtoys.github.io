@@ -704,7 +704,7 @@ body {
 @-webkit-keyframes portal {
 	0% {border: 0px #fff solid;}
 	20% {border: 200px #fff solid;}
-	90% {border: 200px #fff solid;}
+	75% {border: 200px #fff solid;}
 	100% {border: 0px #fff solid;}
 }
 
@@ -720,7 +720,7 @@ body {
 @-moz-keyframes portal {
 	0% {border: 0px #fff solid;}
 	20% {border: 200px #fff solid;}
-	90% {border: 200px #fff solid;}
+	75% {border: 200px #fff solid;}
 	100% {border: 0px #fff solid;}
 }
 
@@ -736,7 +736,7 @@ body {
 @-ms-keyframes portal {
 	0% {border: 0px #fff solid;}
 	20% {border: 200px #fff solid;}
-	90% {border: 200px #fff solid;}
+	75% {border: 200px #fff solid;}
 	100% {border: 0px #fff solid;}
 }
 
