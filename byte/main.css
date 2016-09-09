@@ -572,25 +572,49 @@ footer .right {
 
 /* ––––  Responsive  –––– */
 
-@media (max-width: 360pt) {
+@media (max-width: 376pt) {
 body {
 	padding: 0;
 }
 
  h2 {
-    font-size: 20pt;
+    font-size: 18pt;
   	}
 
 footer a {
 	font-size: 13pt;
+	padding-right: 9pt;
+}
+
+.homeLogoHeader {
+	background-size: 140pt auto;
 }
 
 .homeFeatured {
 	padding-left: 0pt;
+	padding-right: 0;
+}
+
+.homeFeatured h2 {
+	font-size: 20pt;
+}
+
+.homeFeatured .featureBox  {
+	width: 180pt;
+	height: 180pt;
+	min-height: 0;
+	min-width: 0;
+}
+
+.portalanim {
+	animation: portalsm 2s forwards cubic-bezier(.06,.7,.43,.98);
+	-moz-animation: portalsm 2s forwards cubic-bezier(.06,.7,.43,.98);
+	-ms-animation: portalsm 2s forwards cubic-bezier(.06,.7,.43,.98);
+	-webkit-animation: portalsm 2s forwards cubic-bezier(.06,.7,.43,.98);
 }
 
  .homeApps {
- 	width: 100%;
+ 	width: 80%;
  	max-width: 360px;
  	min-width: 0;
   	padding: 0;
@@ -599,12 +623,19 @@ footer a {
 
 .homeApps .appBlock {
 	padding: 00pt;
-	max-width: 360px;
+	max-width: 300pt;
 	min-width: none;
 	}
 
 
-footer .right {width: 40pt;}
+footer .left {
+	padding-left: 15pt;
+	padding-right: 0pt;
+}
+
+footer .right {
+	width: 40pt;
+}
 
 .appBlock .appBox {
 	width: 100%;
@@ -617,6 +648,7 @@ footer .right {width: 40pt;}
     font-size: 20pt;
   	}
 
+
  .homeApps {
  	width: 100%;
  	max-width: 550px;
@@ -626,13 +658,21 @@ footer .right {width: 40pt;}
   }
 
 .homeApps .appBlock {
-	padding: 10pt;
-	max-width: 550px;
-	min-width: none;
+	padding: 0pt;
+	max-width: 340px;
+	min-width: 240pt;
+	margin-top: 50pt;
 	}
 
+footer .left {
+	padding-left: 15pt;
+	padding-right: 0pt;
+}
 
-footer .right {width: 40pt;}
+footer .right {
+	width: 40pt;
+	right: 0;
+}
 
 .appBlock .appBox {
 	width: 100%;
@@ -770,6 +810,12 @@ footer .right {width: 40pt;}
 	100% {border: 0px #fff solid;}
 }
 
+@-webkit-keyframes portalsm {
+	0% {border: 0px #fff solid;}
+	20% {border: 90pt #fff solid;}
+	75% {border: 90pt #fff solid;}
+	100% {border: 0px #fff solid;}
+}
 
 
 /* Thanks for stopping by! */
