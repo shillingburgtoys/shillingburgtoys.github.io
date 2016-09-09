@@ -102,6 +102,8 @@ button:hover {
 
 footer {
 	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 	width: 100%;
 	background-color: #ededed;
 	margin-top: 80pt;
@@ -132,6 +134,8 @@ footer .left {
 	display: block;
 	text-align: left;
 	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 	margin-top: -22pt;
 	padding: 34pt;
 	font-size: 16pt;
@@ -183,6 +187,8 @@ footer .right {
 
 .homeFeatured {
 	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 	width: 100%;
 	margin-top: -80pt;
 	background-color: #fff;
@@ -197,6 +203,8 @@ footer .right {
 
 .homeFeatured .featureBox {
 	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 50pt;
@@ -220,6 +228,8 @@ footer .right {
 
 .homeApps {
 	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 	text-align: center;
 	width: 100%;
 	background-color: #fff;
@@ -229,6 +239,8 @@ footer .right {
 
 .homeApps .appBlock {
 	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 	position: relative;
 	top: 0;
 	padding: 20pt;
@@ -369,6 +381,8 @@ footer .right {
 	margin-left: auto;
 	margin-right: auto;
 	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 	padding: 35pt;
 	padding-top: 16pt;
 	margin-top: 50pt;
@@ -429,6 +443,8 @@ footer .right {
 	margin-left: auto;
 	margin-right: auto;
 	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 	background-image: url(images/office.jpg);
 	background-size: cover;
 	background-position: center center;
@@ -478,6 +494,8 @@ footer .right {
 	margin-top: 8pt;
 	border-radius: 20pt;
 	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 }
 
 .aboutTeam .bio {
@@ -562,6 +580,14 @@ body {
     font-size: 20pt;
   	}
 
+footer a {
+	font-size: 13pt;
+}
+
+.homeFeatured {
+	padding-left: 12pt;
+}
+
  .homeApps {
  	width: 100%;
  	max-width: 360px;
@@ -577,7 +603,7 @@ body {
 	}
 
 
-.right {display: none;}
+footer .right {width: 40pt;}
 
 .appBlock .appBox {
 	width: 100%;
@@ -605,7 +631,7 @@ body {
 	}
 
 
-.right {display: none;}
+footer .right {width: 40pt;}
 
 .appBlock .appBox {
 	width: 100%;
