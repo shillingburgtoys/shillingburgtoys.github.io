@@ -216,7 +216,7 @@ footer .right {
 	min-height: 250pt;
 	max-height: 300pt;
 	cursor: pointer;
-	background-image: url(images/tv.gif);
+	background-image: url(images/noise.gif);
 	background-size: 500pt auto;
 	background-position: center center;
 	border-radius: 400pt;
@@ -591,8 +591,8 @@ footer a {
 }
 
 .homeFeatured {
-	padding-left: 0pt;
-	padding-right: 0;
+	padding-left: 7pt;
+	padding-right: 7pt;
 }
 
 .homeFeatured h2 {
