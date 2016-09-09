@@ -31,6 +31,16 @@ body {
 	font-weight: 300;
 }
 
+.overlay {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background-image: url(images/portalCrop.svg);
+	background-size: cover;
+	background-position: center center;
+	z-index: 2;
+}
+
 .preload {
 	display: none;
 }
