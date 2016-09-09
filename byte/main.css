@@ -599,6 +599,10 @@ footer a {
 	font-size: 20pt;
 }
 
+.bio h2 {
+	font-size: 15pt;
+}
+
 .homeFeatured .featureBox  {
 	width: 180pt;
 	height: 180pt;
@@ -672,6 +676,10 @@ footer .left {
 footer .right {
 	width: 40pt;
 	right: 0;
+}
+
+.bio h2 {
+	font-size: 15pt;
 }
 
 .appBlock .appBox {
