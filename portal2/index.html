@@ -39,15 +39,15 @@ var currentSticker = 0;
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
   noLoop ();
+  cursor(HAND);
 }
 
 function draw() {
   if (mouseIsPressed) {
   	var stickerNum = Math.floor(random(0, 24));
   	loadImage("images/stickers/" + stickerNum + ".png", function(img) {
-    image(img, mouseX - 64, mouseY - 64);
+    image(img, 0, 0, img.width, img.height, mouseX - 40, mouseY - 40, 80, 80);
     currentSticker ++;
-    redraw();
     if(currentSticker > 20) currentSticker = 0;
   });	
   }
