@@ -1,0 +1,88 @@
+<html>
+<head>
+	
+<!---
+
+                                            
+88888888ba                                 
+88      "8b               ,d               
+88      ,8P               88               
+88aaaaaa8P' 8b       d8 MM88MMM  ,adPPYba,  
+88""""""8b, `8b     d8'   88    a8P_____88  
+88      `8b  `8b   d8'    88    8PP"""""""  
+88      a8P   `8b,d8'     88,   "8b,   ,aa  
+88888888P"      Y88'      "Y888  `"Ybbd8"'  
+                d8'                        
+               d8'    
+
+-->
+
+
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta name="author" content="Byte Inc">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link href="main.css" rel="stylesheet" media="screen" type="text/css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.3/p5.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.3/addons/p5.dom.js"></script>
+	
+	<title>Portal</title>
+</head>
+<body>
+</body>
+
+</html>
+
+<script>
+var currentSticker = 0;
+
+function setup() {
+  createCanvas(window.innerWidth, window.innerHeight);
+  noLoop ();
+}
+
+function draw() {
+  if (mouseIsPressed) {
+  	var stickerNum = Math.floor(random(0, 24));
+  	loadImage("images/stickers/" + stickerNum + ".png", function(img) {
+    image(img, mouseX - 64, mouseY - 64);
+    currentSticker ++;
+    redraw();
+    if(currentSticker > 20) currentSticker = 0;
+  });	
+  }
+}
+
+function mousePressed () {
+	redraw ();
+}
+
+
+/*
+//Create a stage by getting a reference to the canvas
+	var canvas = document.getElementById('canvas');
+	canvas.width = window.innerWidth;
+	canvas.height = window.innerHeight;
+    stage = new createjs.Stage("canvas");
+
+    var mouseX;
+    var mouseY;
+
+    var currentSticker = 0;
+
+   function printMousePos(event) {
+  	mouseX = event.clientX
+  	mouseY = event.clientY;
+  	sticker = new createjs.Bitmap("images/stickers/" + currentSticker + ".png");
+    sticker.x = mouseX - 64;
+    sticker.y = mouseY - 64;
+    stage.addChild(sticker);
+    currentSticker++;
+    if(currentSticker > 20) currentSticker = 0;
+    stage.update();
+	}
+
+	document.addEventListener("mousedown", printMousePos);
+*/
+
+</script>
