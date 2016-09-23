@@ -49,6 +49,7 @@ function draw() {
   	loadImage("images/stickers/" + stickerNum + ".png", function(img) {
     image(img, 0, 0, img.width, img.height, mouseX - 40, mouseY - 40, 80, 80);
     currentSticker ++;
+    redraw();
     if(currentSticker > 20) currentSticker = 0;
   });	
   }

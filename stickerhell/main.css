@@ -24,11 +24,12 @@
 
 body {
 	margin: 0;
-	background-color: #fff;
+	background-color: #6d747a;
 	font-family: "Greycliff", sans-serif;
 	font-size: 18pt;
 	color: #1c1c1c;
 	font-weight: 300;
+	text-align: center;
 }
 
 .overlay {
@@ -39,6 +40,10 @@ body {
 	background-size: cover;
 	background-position: center center;
 	z-index: 2;
+}
+
+img {
+	padding:20pt;
 }
 
 .preload {
